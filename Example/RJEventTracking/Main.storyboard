@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5gS-uO-QHP">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--固定埋点-->
+        <scene sceneID="wQg-tq-qST">
+            <objects>
+                <viewController id="whP-gf-Uak" customClass="RJViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uEw-UM-LJ8"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qLZ-Zd-qkQ">
+                                <rect key="frame" x="172" y="318.5" width="31" height="30"/>
+                                <state key="normal" title="预约"/>
+                                <connections>
+                                    <action selector="orderAction:" destination="whP-gf-Uak" eventType="touchUpInside" id="aX3-H0-SiD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qLZ-Zd-qkQ" firstAttribute="centerY" secondItem="TpU-gO-2f1" secondAttribute="centerY" id="BNf-dM-i0H"/>
+                            <constraint firstItem="qLZ-Zd-qkQ" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="ud4-cg-PSi"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="固定埋点" id="if7-W7-d1T"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1244" y="432.23388305847078"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="2iJ-ff-eAx">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="5gS-uO-QHP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Cte-bC-6A7">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="whP-gf-Uak" kind="relationship" relationship="viewControllers" id="7bl-9k-Lyr"/>
+                        <segue destination="8Gy-p1-Pgr" kind="relationship" relationship="viewControllers" id="N3p-6a-kf3"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0xo-xg-Ixt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.80000000000001" y="432.23388305847078"/>
+        </scene>
+        <!--场景埋点-->
+        <scene sceneID="kbn-xz-3g9">
+            <objects>
+                <viewController id="8Gy-p1-Pgr" customClass="RJSceneViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HFQ-Nz-so7"/>
+                        <viewControllerLayoutGuide type="bottom" id="bWM-hj-vkq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VVR-qc-Qnw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGe-gn-4qt">
+                                <rect key="frame" x="156.5" y="318.5" width="62" height="30"/>
+                                <state key="normal" title="联系客服"/>
+                                <connections>
+                                    <action selector="callService:" destination="8Gy-p1-Pgr" eventType="touchUpInside" id="h0k-t4-MB1"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jFV-hl-VXe">
+                                <rect key="frame" x="138" y="203" width="99" height="29"/>
+                                <segments>
+                                    <segment title="订单0"/>
+                                    <segment title="订单1"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentAction:" destination="8Gy-p1-Pgr" eventType="valueChanged" id="4kC-TI-mL5"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jFV-hl-VXe" firstAttribute="centerX" secondItem="VVR-qc-Qnw" secondAttribute="centerX" id="7OI-Fu-Q5E"/>
+                            <constraint firstItem="dGe-gn-4qt" firstAttribute="centerY" secondItem="VVR-qc-Qnw" secondAttribute="centerY" id="8NQ-0o-Fnj"/>
+                            <constraint firstItem="dGe-gn-4qt" firstAttribute="centerX" secondItem="VVR-qc-Qnw" secondAttribute="centerX" id="EE3-Im-Deo"/>
+                            <constraint firstItem="jFV-hl-VXe" firstAttribute="centerY" secondItem="VVR-qc-Qnw" secondAttribute="centerY" multiplier="0.65" id="opI-gz-ofX"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="场景埋点" id="6sQ-xh-E79"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0iA-QA-IE2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.80000000000001" y="1152.7736131934034"/>
+        </scene>
+    </scenes>
+</document>

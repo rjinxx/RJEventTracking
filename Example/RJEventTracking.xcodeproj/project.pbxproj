@@ -23,6 +23,9 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		945556A5234B1F53007C08E5 /* RJSceneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 945556A4234B1F53007C08E5 /* RJSceneViewController.m */; };
+		945556A9234B2293007C08E5 /* RJUserTracking.json in Resources */ = {isa = PBXBuildFile; fileRef = 945556A8234B2293007C08E5 /* RJUserTracking.json */; };
+		945556AC234B2535007C08E5 /* user_call_service.m in Sources */ = {isa = PBXBuildFile; fileRef = 945556AB234B2535007C08E5 /* user_call_service.m */; };
 		D809B36046E800CCF2406034 /* Pods_RJEventTracking_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F72BA751E335E7CDA281C40 /* Pods_RJEventTracking_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,12 +64,17 @@
 		6F1E7637FFBBD5C9B824B605 /* Pods-RJEventTracking_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RJEventTracking_Tests.release.xcconfig"; path = "Target Support Files/Pods-RJEventTracking_Tests/Pods-RJEventTracking_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73C8829A68B28AD5FFD20D60 /* Pods_RJEventTracking_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RJEventTracking_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7AC6AADA77EF26AC4915DDA6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7AC6AADA77EF26AC4915DDA6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8BA2FC0F0F6B9C4D990E6485 /* Pods-RJEventTracking_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RJEventTracking_Tests.debug.xcconfig"; path = "Target Support Files/Pods-RJEventTracking_Tests/Pods-RJEventTracking_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		945556A3234B1F53007C08E5 /* RJSceneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RJSceneViewController.h; sourceTree = "<group>"; };
+		945556A4234B1F53007C08E5 /* RJSceneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RJSceneViewController.m; sourceTree = "<group>"; };
+		945556A8234B2293007C08E5 /* RJUserTracking.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RJUserTracking.json; sourceTree = "<group>"; };
+		945556AA234B2535007C08E5 /* user_call_service.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = user_call_service.h; sourceTree = "<group>"; };
+		945556AB234B2535007C08E5 /* user_call_service.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = user_call_service.m; sourceTree = "<group>"; };
 		AD59FFCC6C5E943C9B55F860 /* Pods-RJEventTracking_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RJEventTracking_Example.release.xcconfig"; path = "Target Support Files/Pods-RJEventTracking_Example/Pods-RJEventTracking_Example.release.xcconfig"; sourceTree = "<group>"; };
-		AE666FC47203BE9B91BB4980 /* RJEventTracking.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = RJEventTracking.podspec; path = ../RJEventTracking.podspec; sourceTree = "<group>"; };
-		E36DC07355A722F7ACEA122E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		AE666FC47203BE9B91BB4980 /* RJEventTracking.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RJEventTracking.podspec; path = ../RJEventTracking.podspec; sourceTree = "<group>"; };
+		E36DC07355A722F7ACEA122E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +111,6 @@
 				8BA2FC0F0F6B9C4D990E6485 /* Pods-RJEventTracking_Tests.debug.xcconfig */,
 				6F1E7637FFBBD5C9B824B605 /* Pods-RJEventTracking_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -144,13 +151,8 @@
 		6003F593195388D20070C39A /* Example for RJEventTracking */ = {
 			isa = PBXGroup;
 			children = (
-				6003F59C195388D20070C39A /* RJAppDelegate.h */,
-				6003F59D195388D20070C39A /* RJAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* RJViewController.h */,
-				6003F5A6195388D20070C39A /* RJViewController.m */,
-				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
-				6003F5A8195388D20070C39A /* Images.xcassets */,
+				945556A7234B223C007C08E5 /* Tracking */,
+				945556A6234B220E007C08E5 /* Business */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for RJEventTracking";
@@ -160,6 +162,8 @@
 		6003F594195388D20070C39A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6003F5A8195388D20070C39A /* Images.xcassets */,
+				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F595195388D20070C39A /* RJEventTracking-Info.plist */,
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
@@ -195,6 +199,30 @@
 				7AC6AADA77EF26AC4915DDA6 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		945556A6234B220E007C08E5 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				6003F59C195388D20070C39A /* RJAppDelegate.h */,
+				6003F59D195388D20070C39A /* RJAppDelegate.m */,
+				945556A3234B1F53007C08E5 /* RJSceneViewController.h */,
+				945556A4234B1F53007C08E5 /* RJSceneViewController.m */,
+				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				6003F5A5195388D20070C39A /* RJViewController.h */,
+				6003F5A6195388D20070C39A /* RJViewController.m */,
+			);
+			name = Business;
+			sourceTree = "<group>";
+		};
+		945556A7234B223C007C08E5 /* Tracking */ = {
+			isa = PBXGroup;
+			children = (
+				945556A8234B2293007C08E5 /* RJUserTracking.json */,
+				945556AA234B2535007C08E5 /* user_call_service.h */,
+				945556AB234B2535007C08E5 /* user_call_service.m */,
+			);
+			name = Tracking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +286,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -281,6 +310,7 @@
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				945556A9234B2293007C08E5 /* RJUserTracking.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,10 +332,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-RJEventTracking_Example/Pods-RJEventTracking_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Aspects/Aspects.framework",
 				"${BUILT_PRODUCTS_DIR}/RJEventTracking/RJEventTracking.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Aspects.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RJEventTracking.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,8 +396,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				945556AC234B2535007C08E5 /* user_call_service.m in Sources */,
 				6003F59E195388D20070C39A /* RJAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* RJViewController.m in Sources */,
+				945556A5234B1F53007C08E5 /* RJSceneViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

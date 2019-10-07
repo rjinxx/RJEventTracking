@@ -1,0 +1,17 @@
+{
+    "version": "0.1.0",
+    "tracking": [
+        {
+            "class": "RJViewController",
+            "event": {
+                "user_fp_order_click": "orderAction:"
+            }
+        },
+        {
+            "class": "RJSceneViewController",
+            "event": {
+                "user_call_service": "callService:"
+            }
+        }
+    ]
+}

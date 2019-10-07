@@ -7,12 +7,15 @@
 //
 
 #import "RJAppDelegate.h"
+#import "RJEventTracking.h"
 
 @implementation RJAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [RJEventTracking loadConfiguration:[[NSBundle mainBundle] pathForResource:@"RJUserTracking"
+                                                                       ofType:@"json"]];
     return YES;
 }
 
