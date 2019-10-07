@@ -22,7 +22,7 @@ pod 'RJEventTracking'
 
 ## Author
 
-RylanJIN, xiaojun.jin@outlook.com
+Ryan Jin, xiaojun.jin@outlook.com
 
 ## License
 
