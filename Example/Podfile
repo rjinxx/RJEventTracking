@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'RJEventTracking_Example' do
+  pod 'RJEventTracking', :path => '../'
+
+  target 'RJEventTracking_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
